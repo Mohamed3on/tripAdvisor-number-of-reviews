@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Trip advisor number of reviews",
+  "version": "0.1",
+  "description": "Shows number of reviews for TripAdvisor places",
+  "author": "Mohamed Oun",
+  "content_scripts": [
+    {
+      "matches": ["*://*.tripadvisor.com/*"],
+      "js": ["content-script.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
